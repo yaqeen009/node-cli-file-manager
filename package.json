@@ -15,6 +15,7 @@
   "bugs": {
     "url": "https://github.com/yaqeen009/node-cli-file-manager/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/yaqeen009/node-cli-file-manager#readme",
   "description": ""
 }
