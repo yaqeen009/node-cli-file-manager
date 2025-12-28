@@ -1,20 +1,23 @@
-import { create } from "./commands/create.js"
+import { create } from "./commands/create.js";
+import { del } from "./commands/delete.js";
 
-const [,,command, ...args] = process.argv
+const [, , command, ...args] = process.argv;
 
 switch (command) {
-    case "create":
-            create(args)
-        // case "read":
-        //     read()
-        // case "update":
-        //     update()
-        // case "delete":
-        //     del()
-        // case "list":
-        //     list()
-        // case "rename":
-        //     rename()
-        default:
-            break
+  case "create":
+    create(args);
+    break;
+  // case "read":
+  //     read()
+  // case "update":
+  //     update()
+  case "delete":
+    del(args);
+    break;
+  // case "list":
+  //     list()
+  // case "rename":
+  //     rename()
+  default:
+    break;
 }
